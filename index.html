@@ -3,9 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<>, initial-scale=1.0">
-    <title>Feliz dia dos namorados!</title>
+    <title>Feliz aniversário!</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+/>
+
+    "
 </head>
 <body>
-        <header class="cabecalho"></header>
+        <header class="cabecalho">
+            <div class="logo">
+                <img src="logo.png" alt="" width="50px">    
+            </div>
+            <nav>
+                <a href="#"> Início</a>
+                <a href="#"> Séries</a>
+                <a href="#"> Filmes</a>
+                <a href="#"> Minha Lista</a>
+
+            </nav>
+        </header>
+        <section class="banner">
+            <div class="conteudo">
+                <p class="titulo"> Lígia e Marco
+                <p class="detalhes">
+                    <span>21 de Dezembro , 3 Temporadas</span>
+                    <span class="stars">
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+
+                        
+
+                    </span>
+
+                    <p class="descricao">
+                        Hoje é um dia especial — o dia de celebrar a tua vida, tua trajetória e todas as conquistas que te trouxeram até aqui. Que alegria poder comemorar mais um capítulo da tua história, repleta de momentos, desafios superados e sonhos que continuam a se construir a cada passo.
+
+Marco, que neste novo ciclo você siga colhendo os frutos de todo o seu esforço e dedicação. Que a vida te presenteie com saúde, serenidade e boas surpresas. Que não faltem risadas sinceras, boas companhias e oportunidades que te façam evoluir ainda mais, tanto pessoal quanto profissionalmente.
+Que cada novo dia seja uma chance de recomeçar, de acreditar e de seguir firme nos teus propósitos. Continue sendo essa pessoa que inspira confiança, que espalha leveza e que faz diferença por onde passa. O mundo precisa de mais pessoas com a tua energia, tua inteligência e tua generosidade.
+Aproveite muito o seu dia — celebre, sorria, agradeça e permita-se ser feliz em cada instante. Você merece o melhor que a vida tem a oferecer. Que venham muitos outros aniversários, sempre cheios de amor, conquistas e motivos para brindar à vida.
+Parabéns, Marco! Que este novo ano seja o mais incrível de todos! 🥳🎈🎁
+                        
+                    </p>
+                </p>
+
+                </p>
+                <div class = "botoes">
+                    <button><i class="fa-solid fa-play"></i> Continuar </button>
+                    <button> <i class="fa-solid fa-star"></i> Favorito</button>
+                </div>
+            </div>
+
+        </section>
+        <section class="momentos">
+            <h2>Nossos melhores momentos</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+    <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+      <!-- Slides -->
+            <div class="swiper-slide"><img src="./fotos/1.png"></div>
+            <div class="swiper-slide"><img src="./fotos/2.png"></div>
+            <div class="swiper-slide"><img src="./fotos/3.jpg"></div>
+            <div class="swiper-slide"><img src="./fotos/4.jpg"></div>
+            <div class="swiper-slide"><img src="./fotos/5.jpg"></div>
+
+
+            </div>
+            
+            </div>
+     
+        </section>
+        <footer>
+            2025 - Leonardo 
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+        <script src="script.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+                // Optional parameters
+                loop: true,
+                autoplay:{
+                    delay: 2500,
+                    disableOnInteraction: false
+                },
+                slidesPerView:2,
+                spaceBetween: 10,
+                loop: true,
+                breakpoints: {
+                    600: {
+                        loop: true,
+                        slidesPerView: 3,
+                        spaceBetween: 15,
+                    },
+                    900:{
+                        loop:true,
+                        slidesPerView:3,
+                        spaceBetween: 40,
+                    }
+                }
+
+            });
+        </script>
 </body>
 </html>
